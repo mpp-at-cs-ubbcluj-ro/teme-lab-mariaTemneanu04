@@ -2,7 +2,6 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Un mesaj de la consola<3\n");
-        System.out.print("Un alt mesaj");
+        System.out.print("Un mesaj");
     }
 }
