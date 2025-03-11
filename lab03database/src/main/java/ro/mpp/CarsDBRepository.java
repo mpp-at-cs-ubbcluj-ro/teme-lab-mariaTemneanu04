@@ -11,9 +11,6 @@ import java.util.Properties;
 public class CarsDBRepository implements CarRepository{
 
     private JdbcUtils dbUtils;
-
-
-
     private static final Logger logger= LogManager.getLogger();
 
     public CarsDBRepository(Properties props) {
@@ -107,7 +104,7 @@ public class CarsDBRepository implements CarRepository{
             ps.setString(1, elem.getManufacturer());
             ps.setString(2, elem.getModel());
             ps.setInt(3, elem.getYear());
-            ps.setInt(4, elem.getId());
+            ps.setInt(4, integer);
 
             ps.executeUpdate();
 

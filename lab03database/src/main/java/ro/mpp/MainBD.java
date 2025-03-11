@@ -9,7 +9,7 @@ public class MainBD {
 
         Properties props=new Properties();
         try {
-            props.load(new FileReader("C:\\Users\\maria\\Desktop\\Year2\\Semestru 2\\MPP\\Laborator\\lab03database\\bd.config"));
+            props.load(new FileReader("bd.config"));
         } catch (IOException e) {
             System.out.println("Cannot find bd.config "+e);
         }
@@ -31,6 +31,15 @@ public class MainBD {
        System.out.println("Masinile produse intre anii " + minYear + " " + maxYear);
        for (Car car:carRepo.findBetweenYears(Integer.parseInt(minYear), Integer.parseInt(maxYear)))
            System.out.println(car);
+
+
+       Car updated = new Car("MASINA UPDATED", "MODEL", 2000);
+       System.out.println("Se actualizeaza masina cu id 13");
+       carRepo.update(13, updated);
+
+        System.out.println("Toate masinile din db");
+        for(Car car:carRepo.findAll())
+            System.out.println(car);
 
     }
 }
