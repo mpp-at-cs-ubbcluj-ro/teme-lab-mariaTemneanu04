@@ -1,0 +1,250 @@
+09 Mar 2025 21:29:12,158 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {} 
+09 Mar 2025 21:57:57,640 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {} 
+09 Mar 2025 21:57:57,651 TRACE ro.mpp.CarsDBRepository 38 add - Enter Saving task Id=0 Tesla Model S 2019 
+09 Mar 2025 21:57:57,652 TRACE ro.mpp.JdbcUtils 48 getConnection - Enter
+09 Mar 2025 21:57:57,652 TRACE ro.mpp.JdbcUtils 25 getNewConnection - Enter
+09 Mar 2025 21:57:57,652 INFO  ro.mpp.JdbcUtils 30 getNewConnection - trying to connect to database ... null
+09 Mar 2025 21:57:57,652 INFO  ro.mpp.JdbcUtils 31 getNewConnection - user: null
+09 Mar 2025 21:57:57,653 INFO  ro.mpp.JdbcUtils 32 getNewConnection - pass: null
+09 Mar 2025 21:57:57,655 ERROR ro.mpp.JdbcUtils 41 getNewConnection - java.sql.SQLException: The url cannot be null
+09 Mar 2025 21:57:57,656 TRACE ro.mpp.JdbcUtils 57 getConnection - Exit
+09 Mar 2025 22:02:22,855 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {} 
+09 Mar 2025 22:02:22,868 TRACE ro.mpp.CarsDBRepository 38 add - Enter Saving task Id=0 Tesla Model S 2019 
+09 Mar 2025 22:02:22,869 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:02:22,869 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:02:22,870 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at null
+09 Mar 2025 22:02:22,871 ERROR ro.mpp.JdbcUtils 32 getNewConnection - Error getting connection
+java.sql.SQLException: The url cannot be null
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:665) ~[java.sql:?]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:253) ~[java.sql:?]
+	at ro.mpp.JdbcUtils.getNewConnection(JdbcUtils.java:30) [main/:?]
+	at ro.mpp.JdbcUtils.getConnection(JdbcUtils.java:42) [main/:?]
+	at ro.mpp.CarsDBRepository.add(CarsDBRepository.java:41) [main/:?]
+	at ro.mpp.CarsDBRepository.add(CarsDBRepository.java:11) [main/:?]
+	at ro.mpp.MainBD.main(MainBD.java:18) [main/:?]
+09 Mar 2025 22:02:22,886 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit
+09 Mar 2025 22:03:08,309 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasecars.db} 
+09 Mar 2025 22:03:08,318 TRACE ro.mpp.CarsDBRepository 38 add - Enter Saving task Id=0 Tesla Model S 2019 
+09 Mar 2025 22:03:08,319 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:03:08,319 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:03:08,319 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasecars.db
+09 Mar 2025 22:03:09,026 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4738a206)
+09 Mar 2025 22:03:09,031 ERROR ro.mpp.CarsDBRepository 51 add - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: cars)
+09 Mar 2025 22:03:09,032 TRACE ro.mpp.CarsDBRepository 55 add - Exit
+09 Mar 2025 22:03:09,032 TRACE ro.mpp.CarsDBRepository 65 findAll - Enter
+09 Mar 2025 22:03:09,033 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:03:09,033 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:03:09,033 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasecars.db
+09 Mar 2025 22:03:09,035 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@306e95ec)
+09 Mar 2025 22:03:09,035 ERROR ro.mpp.CarsDBRepository 78 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: cars)
+09 Mar 2025 22:03:09,036 TRACE ro.mpp.CarsDBRepository 82 findAll - Exit with([])
+09 Mar 2025 22:07:46,845 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasemasini.db} 
+09 Mar 2025 22:07:46,856 TRACE ro.mpp.CarsDBRepository 38 add - Enter Saving task Id=0 Tesla Model S 2019 
+09 Mar 2025 22:07:46,856 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:07:46,856 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:07:46,856 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasemasini.db
+09 Mar 2025 22:07:47,032 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4738a206)
+09 Mar 2025 22:07:47,033 ERROR ro.mpp.CarsDBRepository 51 add - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: masini)
+09 Mar 2025 22:07:47,033 TRACE ro.mpp.CarsDBRepository 55 add - Exit
+09 Mar 2025 22:07:47,033 TRACE ro.mpp.CarsDBRepository 65 findAll - Enter
+09 Mar 2025 22:07:47,033 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:07:47,033 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:07:47,041 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasemasini.db
+09 Mar 2025 22:07:47,041 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@306e95ec)
+09 Mar 2025 22:07:47,041 ERROR ro.mpp.CarsDBRepository 78 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: masini)
+09 Mar 2025 22:07:47,041 TRACE ro.mpp.CarsDBRepository 82 findAll - Exit with([])
+09 Mar 2025 22:09:04,823 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasemasini.db} 
+09 Mar 2025 22:09:04,833 TRACE ro.mpp.CarsDBRepository 38 add - Enter Saving task Id=0 Tesla Model S 2019 
+09 Mar 2025 22:09:04,834 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:09:04,834 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:09:04,834 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasemasini.db
+09 Mar 2025 22:09:04,993 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4738a206)
+09 Mar 2025 22:09:04,998 ERROR ro.mpp.CarsDBRepository 51 add - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: masini)
+09 Mar 2025 22:09:04,999 TRACE ro.mpp.CarsDBRepository 55 add - Exit
+09 Mar 2025 22:09:04,999 TRACE ro.mpp.CarsDBRepository 65 findAll - Enter
+09 Mar 2025 22:09:04,999 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:09:05,000 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:09:05,001 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasemasini.db
+09 Mar 2025 22:09:05,001 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@306e95ec)
+09 Mar 2025 22:09:05,002 ERROR ro.mpp.CarsDBRepository 78 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: masini)
+09 Mar 2025 22:09:05,002 TRACE ro.mpp.CarsDBRepository 82 findAll - Exit with([])
+09 Mar 2025 22:09:39,216 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasecars.db} 
+09 Mar 2025 22:09:39,231 TRACE ro.mpp.CarsDBRepository 38 add - Enter Saving task Id=0 Tesla Model S 2019 
+09 Mar 2025 22:09:39,232 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:09:39,233 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:09:39,233 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasecars.db
+09 Mar 2025 22:09:39,430 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4738a206)
+09 Mar 2025 22:09:39,435 ERROR ro.mpp.CarsDBRepository 51 add - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: masini)
+09 Mar 2025 22:09:39,435 TRACE ro.mpp.CarsDBRepository 55 add - Exit
+09 Mar 2025 22:09:39,435 TRACE ro.mpp.CarsDBRepository 65 findAll - Enter
+09 Mar 2025 22:09:39,436 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:09:39,436 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:09:39,436 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasecars.db
+09 Mar 2025 22:09:39,437 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@306e95ec)
+09 Mar 2025 22:09:39,438 ERROR ro.mpp.CarsDBRepository 78 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: masini)
+09 Mar 2025 22:09:39,438 TRACE ro.mpp.CarsDBRepository 82 findAll - Exit with([])
+09 Mar 2025 22:09:56,178 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasecars.db} 
+09 Mar 2025 22:09:56,190 TRACE ro.mpp.CarsDBRepository 38 add - Enter Saving task Id=0 Tesla Model S 2019 
+09 Mar 2025 22:09:56,191 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:09:56,191 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:09:56,192 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasecars.db
+09 Mar 2025 22:09:56,398 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4738a206)
+09 Mar 2025 22:09:56,404 ERROR ro.mpp.CarsDBRepository 51 add - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: masini)
+09 Mar 2025 22:09:56,404 TRACE ro.mpp.CarsDBRepository 55 add - Exit
+09 Mar 2025 22:09:56,404 TRACE ro.mpp.CarsDBRepository 65 findAll - Enter
+09 Mar 2025 22:09:56,405 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:09:56,405 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:09:56,406 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasecars.db
+09 Mar 2025 22:09:56,407 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@306e95ec)
+09 Mar 2025 22:09:56,407 ERROR ro.mpp.CarsDBRepository 78 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: masini)
+09 Mar 2025 22:09:56,408 TRACE ro.mpp.CarsDBRepository 82 findAll - Exit with([])
+09 Mar 2025 22:10:34,263 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/mariaDesktop/Year2/Semestru 2/MPP/Laborator/lab03database/cars.db} 
+09 Mar 2025 22:10:34,277 TRACE ro.mpp.CarsDBRepository 38 add - Enter Saving task Id=0 Tesla Model S 2019 
+09 Mar 2025 22:10:34,278 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:10:34,278 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:10:34,278 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:/Users/mariaDesktop/Year2/Semestru 2/MPP/Laborator/lab03database/cars.db
+09 Mar 2025 22:10:34,310 ERROR ro.mpp.JdbcUtils 32 getNewConnection - Error getting connection
+java.sql.SQLException: path to 'C:/Users/mariaDesktop/Year2/Semestru 2/MPP/Laborator/lab03database/cars.db': 'C:\Users\mariaDesktop' does not exist
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:261) ~[sqlite-jdbc-3.49.1.0.jar:?]
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:67) ~[sqlite-jdbc-3.49.1.0.jar:?]
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28) ~[sqlite-jdbc-3.49.1.0.jar:?]
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:19) ~[sqlite-jdbc-3.49.1.0.jar:?]
+	at org.sqlite.JDBC.createConnection(JDBC.java:106) ~[sqlite-jdbc-3.49.1.0.jar:?]
+	at org.sqlite.JDBC.connect(JDBC.java:79) ~[sqlite-jdbc-3.49.1.0.jar:?]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682) ~[java.sql:?]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:253) ~[java.sql:?]
+	at ro.mpp.JdbcUtils.getNewConnection(JdbcUtils.java:30) [main/:?]
+	at ro.mpp.JdbcUtils.getConnection(JdbcUtils.java:42) [main/:?]
+	at ro.mpp.CarsDBRepository.add(CarsDBRepository.java:41) [main/:?]
+	at ro.mpp.CarsDBRepository.add(CarsDBRepository.java:11) [main/:?]
+	at ro.mpp.MainBD.main(MainBD.java:18) [main/:?]
+09 Mar 2025 22:10:34,332 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit
+09 Mar 2025 22:12:15,722 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasecars.db} 
+09 Mar 2025 22:12:15,734 TRACE ro.mpp.CarsDBRepository 38 add - Enter Saving task Id=0 Tesla Model S 2019 
+09 Mar 2025 22:12:15,735 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:12:15,735 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:12:15,735 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasecars.db
+09 Mar 2025 22:12:15,903 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4738a206)
+09 Mar 2025 22:12:15,909 ERROR ro.mpp.CarsDBRepository 51 add - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: masini)
+09 Mar 2025 22:12:15,909 TRACE ro.mpp.CarsDBRepository 55 add - Exit
+09 Mar 2025 22:12:15,910 TRACE ro.mpp.CarsDBRepository 65 findAll - Enter
+09 Mar 2025 22:12:15,910 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:12:15,910 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:12:15,911 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:UsersmariaDesktopYear2Semestru 2MPPLaboratorlab03databasecars.db
+09 Mar 2025 22:12:15,912 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@306e95ec)
+09 Mar 2025 22:12:15,913 ERROR ro.mpp.CarsDBRepository 78 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: masini)
+09 Mar 2025 22:12:15,913 TRACE ro.mpp.CarsDBRepository 82 findAll - Exit with([])
+09 Mar 2025 22:14:16,202 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db} 
+09 Mar 2025 22:14:16,214 TRACE ro.mpp.CarsDBRepository 38 add - Enter Saving task Id=0 Tesla Model S 2019 
+09 Mar 2025 22:14:16,215 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:14:16,215 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:14:16,216 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+09 Mar 2025 22:14:16,402 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4738a206)
+09 Mar 2025 22:14:16,417 TRACE ro.mpp.CarsDBRepository 55 add - Exit
+09 Mar 2025 22:14:16,417 TRACE ro.mpp.CarsDBRepository 65 findAll - Enter
+09 Mar 2025 22:14:16,418 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+09 Mar 2025 22:14:16,418 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+09 Mar 2025 22:14:16,419 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+09 Mar 2025 22:14:16,422 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@485966cc)
+09 Mar 2025 22:14:16,425 TRACE ro.mpp.CarsDBRepository 82 findAll - Exit with([Id=1 dacia sandero 2019, Id=2 skoda octavia 2020, Id=3 Tesla Model S 2019])
+11 Mar 2025 14:18:24,424 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db} 
+11 Mar 2025 14:18:24,429 TRACE ro.mpp.CarsDBRepository 56 add - Enter Saving task Id=0 Tesla Model S 2019 
+11 Mar 2025 14:18:24,429 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:18:24,429 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:18:24,429 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:18:24,625 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4738a206)
+11 Mar 2025 14:18:24,633 TRACE ro.mpp.CarsDBRepository 73 add - Exit
+11 Mar 2025 14:18:24,647 TRACE ro.mpp.CarsDBRepository 101 findAll - Enter
+11 Mar 2025 14:18:24,647 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:18:24,647 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:18:24,649 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:18:24,650 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@485966cc)
+11 Mar 2025 14:18:24,650 TRACE ro.mpp.CarsDBRepository 118 findAll - Exit with([Id=1 dacia sandero 2019, Id=2 skoda octavia 2020, Id=4 Tesla Model S 2019])
+11 Mar 2025 14:18:24,650 TRACE ro.mpp.CarsDBRepository 26 findByManufacturer - Enter
+11 Mar 2025 14:18:24,650 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:18:24,650 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:18:24,650 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:18:24,650 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6e0f5f7f)
+11 Mar 2025 14:18:24,650 TRACE ro.mpp.CarsDBRepository 44 findByManufacturer - Exit with([])
+11 Mar 2025 14:21:35,801 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db} 
+11 Mar 2025 14:21:35,814 TRACE ro.mpp.CarsDBRepository 58 add - Enter Saving task Id=0 Tesla Model S 2019 
+11 Mar 2025 14:21:35,815 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:21:35,815 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:21:35,815 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:21:35,987 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4738a206)
+11 Mar 2025 14:21:36,001 TRACE ro.mpp.CarsDBRepository 75 add - Exit
+11 Mar 2025 14:21:36,001 TRACE ro.mpp.CarsDBRepository 103 findAll - Enter
+11 Mar 2025 14:21:36,002 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:21:36,002 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:21:36,003 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:21:36,006 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@485966cc)
+11 Mar 2025 14:21:36,009 TRACE ro.mpp.CarsDBRepository 120 findAll - Exit with([Id=5 Tesla Model S 2019])
+11 Mar 2025 14:21:36,009 TRACE ro.mpp.CarsDBRepository 26 findByManufacturer - Enter
+11 Mar 2025 14:21:36,009 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:21:36,010 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:21:36,010 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:21:36,011 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6e0f5f7f)
+11 Mar 2025 14:21:36,012 TRACE ro.mpp.CarsDBRepository 46 findByManufacturer - Exit with([Id=5 Tesla Model S 2019])
+11 Mar 2025 14:24:17,589 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db} 
+11 Mar 2025 14:24:17,608 TRACE ro.mpp.CarsDBRepository 58 add - Enter Saving task Id=0 Tesla Model S 2019 
+11 Mar 2025 14:24:17,609 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:24:17,609 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:24:17,609 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:24:17,804 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5acf93bb)
+11 Mar 2025 14:24:17,818 TRACE ro.mpp.CarsDBRepository 75 add - Exit
+11 Mar 2025 14:24:17,819 TRACE ro.mpp.CarsDBRepository 103 findAll - Enter
+11 Mar 2025 14:24:17,819 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:24:17,819 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:24:17,820 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:24:17,822 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@43dac38f)
+11 Mar 2025 14:24:17,826 TRACE ro.mpp.CarsDBRepository 120 findAll - Exit with([Id=5 Tesla Model S 2019, Id=6 dacia sandero 2019, Id=7 skoda superb 2021, Id=8 Tesla Model S 2019])
+11 Mar 2025 14:24:17,827 TRACE ro.mpp.CarsDBRepository 26 findByManufacturer - Enter
+11 Mar 2025 14:24:17,827 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:24:17,827 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:24:17,827 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:24:17,829 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57cf54e1)
+11 Mar 2025 14:24:17,830 TRACE ro.mpp.CarsDBRepository 46 findByManufacturer - Exit with([Id=5 Tesla Model S 2019, Id=8 Tesla Model S 2019])
+11 Mar 2025 14:24:32,219 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db} 
+11 Mar 2025 14:24:32,233 TRACE ro.mpp.CarsDBRepository 58 add - Enter Saving task Id=0 Tesla Model S 2019 
+11 Mar 2025 14:24:32,235 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:24:32,236 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:24:32,236 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:24:32,467 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4738a206)
+11 Mar 2025 14:24:32,487 TRACE ro.mpp.CarsDBRepository 75 add - Exit
+11 Mar 2025 14:24:32,488 TRACE ro.mpp.CarsDBRepository 103 findAll - Enter
+11 Mar 2025 14:24:32,490 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:24:32,491 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:24:32,492 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:24:32,495 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@485966cc)
+11 Mar 2025 14:24:32,501 TRACE ro.mpp.CarsDBRepository 120 findAll - Exit with([Id=5 Tesla Model S 2019, Id=6 dacia sandero 2019, Id=7 skoda superb 2021, Id=9 Tesla Model S 2019])
+11 Mar 2025 14:24:32,502 TRACE ro.mpp.CarsDBRepository 26 findByManufacturer - Enter
+11 Mar 2025 14:24:32,502 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:24:32,502 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:24:32,503 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:24:32,504 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6e0f5f7f)
+11 Mar 2025 14:24:32,505 TRACE ro.mpp.CarsDBRepository 46 findByManufacturer - Exit with([Id=5 Tesla Model S 2019, Id=9 Tesla Model S 2019])
+11 Mar 2025 14:27:27,289 INFO  ro.mpp.CarsDBRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db} 
+11 Mar 2025 14:27:27,299 TRACE ro.mpp.CarsDBRepository 79 add - Enter Saving task Id=0 Tesla Model S 2019 
+11 Mar 2025 14:27:27,300 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:27:27,300 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:27:27,300 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:27:27,465 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4738a206)
+11 Mar 2025 14:27:27,481 TRACE ro.mpp.CarsDBRepository 96 add - Exit
+11 Mar 2025 14:27:27,482 TRACE ro.mpp.CarsDBRepository 124 findAll - Enter
+11 Mar 2025 14:27:27,484 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:27:27,484 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:27:27,485 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:27:27,488 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@485966cc)
+11 Mar 2025 14:27:27,491 TRACE ro.mpp.CarsDBRepository 141 findAll - Exit with([Id=6 dacia sandero 2015, Id=7 skoda superb 2021, Id=10 Tesla Model S 2019])
+11 Mar 2025 14:27:27,492 TRACE ro.mpp.CarsDBRepository 26 findByManufacturer - Enter
+11 Mar 2025 14:27:27,493 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:27:27,493 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:27:27,493 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:27:27,494 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6e0f5f7f)
+11 Mar 2025 14:27:27,495 TRACE ro.mpp.CarsDBRepository 46 findByManufacturer - Exit with([Id=10 Tesla Model S 2019])
+11 Mar 2025 14:27:27,496 TRACE ro.mpp.CarsDBRepository 52 findBetweenYears - Enter
+11 Mar 2025 14:27:27,496 TRACE ro.mpp.JdbcUtils 39 getConnection - Enter
+11 Mar 2025 14:27:27,501 TRACE ro.mpp.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2025 14:27:27,502 INFO  ro.mpp.JdbcUtils 27 getNewConnection - Trying to connect to SQLite database at jdbc:sqlite:C:\Users\maria\Desktop\Year2\Semestru 2\MPP\Laborator\lab03database\cars.db
+11 Mar 2025 14:27:27,503 TRACE ro.mpp.JdbcUtils 47 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3ee37e5a)
+11 Mar 2025 14:27:27,504 TRACE ro.mpp.CarsDBRepository 73 findBetweenYears - Exit with([Id=6 dacia sandero 2015, Id=10 Tesla Model S 2019])
